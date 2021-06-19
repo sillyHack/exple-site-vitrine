@@ -9,6 +9,7 @@ import goodtimes from '../img/goodtimes-small.png';
 import {motion} from 'framer-motion';
 import {pageAnimation, fade, photoAnim, lineAnim, slider, sliderContainer, stretchPhoto} from '../animation';
 import {useScroll} from '../components/useScroll';
+import ScrollTop from '../components/ScrollTop';
 
 const OurWork = () => {
      const [element, controls] = useScroll();
@@ -44,6 +45,7 @@ const OurWork = () => {
                          <motion.img variants={stretchPhoto} src={goodtimes} alt="Good times"/>
                     </Link>
                </Movie>
+               <ScrollTop />
           </Work>
      )
 }
