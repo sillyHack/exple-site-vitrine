@@ -70,6 +70,9 @@ const Services = styled(About)`
 const Cards = styled.div`
      display: flex;
      flex-wrap: wrap;
+     @media (max-width: 1300px){ // when the frame is below 1300px, we execute the css instructions(used for mobile screens)
+          justify-content: center;
+     }
 `;
 const Card = styled.div`
      flex-basis: 20rem;
